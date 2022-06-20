@@ -33,7 +33,7 @@ model.add(Dense(1))
 
 #3. 컴파일, 훈련
 model.compile(loss='mse', optimizer='adam') #옵티마이저는 로스에 힘을 싣는 역할
-model.fit(x, y, epochs=100, batch_size=1) #batch로 할 경우 3,3,3,1=> 4번 돌아감
+model.fit(x, y, epochs=100, batch_size=1)
 
 #4. 평가, 예측
 loss = model.evaluate(x, y)
